@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v+Z58joU3o9e40TtC59+g0PprSm8E9pa7jXn25UGB37ZsEiT07cjTpD69lCDPw4HeobyS8Q2MGpLCq1+otpoEA==",
+  "dgSpecHash": "pa9V+r+CQu9IHL5c6owA2XVgC5ZjxTvJ2AZaZtDrpL9Al4xhD0BLf+LzDT8+AmrqqKSL52Xxp4zMvd1u9vfnNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mgrm3\\source\\repos\\AuraTest\\AuraTest\\AuraTest.csproj",
+  "projectFilePath": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\AuraTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mgrm3\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\mgrm3\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

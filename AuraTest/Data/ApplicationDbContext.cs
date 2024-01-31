@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AuraTest.Migrations;
+using AuraTest.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuraTest.Data
@@ -9,5 +11,11 @@ namespace AuraTest.Data
             : base(options)
         {
         }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+
     }
 }
