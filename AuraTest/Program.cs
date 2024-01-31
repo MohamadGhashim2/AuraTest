@@ -21,7 +21,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>().AddDefaultTokenProviders().
     AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-
+CreateDefaultRoles(builder.Services.BuildServiceProvider()).GetAwaiter().GetResult();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -48,5 +48,20 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+async Task CreateDefaultRoles(IServiceProvider serviceProvider)
+{
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    // Add your default roles here
+    string[] defaultRoles = { "Admin", "Manager", "User" };
+
+    foreach (var roleName in defaultRoles)
+    {
+        if (!await roleManager.RoleExistsAsync(roleName))
+        {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+}
 
 app.Run();
