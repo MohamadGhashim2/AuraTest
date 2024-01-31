@@ -12,6 +12,9 @@ namespace AuraTest.Data
         {
         }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Categories> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
