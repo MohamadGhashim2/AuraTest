@@ -110,11 +110,7 @@ namespace AuraTest.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
-            [Required]
-            public string? Role { get; set; }
 
-            [ValidateNever]
-            public IEnumerable<SelectListItem> RoleList { get; set; }
         }
 
 
@@ -123,10 +119,7 @@ namespace AuraTest.Areas.Identity.Pages.Account
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-            Input = new InputModel()
-            {
-                Role ="User",
-            };
+
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)

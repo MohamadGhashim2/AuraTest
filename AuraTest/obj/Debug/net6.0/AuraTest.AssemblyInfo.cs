@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuraTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a109e7cec5f77d3ba286afde4c7b19a6a96ce6cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45c6448b91fc13c9d02d25e02aa93fb28f761812")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuraTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuraTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

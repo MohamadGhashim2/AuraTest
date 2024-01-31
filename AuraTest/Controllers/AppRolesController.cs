@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace AuraTest.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="Admin")]
     public class AppRolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
