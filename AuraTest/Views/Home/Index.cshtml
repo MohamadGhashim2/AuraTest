@@ -1,8 +1,24 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<AuraTest.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1>Welcome to Our Shop</h1>
+
+<div class="product-container">
+    @foreach (var item in Model)
+    {
+        <div class="product-card">
+            <img class="product-image" src="~/img/@item.ProductImageUrl" alt="@item.ProductName" />
+            <div class="product-details">
+                <div class="product-name">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                <div class="product-price">@Html.DisplayFor(modelItem => item.ProductPrice)TL</div>
+                <div>
+                    <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
+                    <a asp-action="Create" asp-controller="Cart" asp-route-id="@item.ProductId">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    }
 </div>

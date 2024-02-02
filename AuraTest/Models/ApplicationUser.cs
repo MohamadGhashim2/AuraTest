@@ -6,5 +6,8 @@ namespace AuraTest.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
+
     }
 }

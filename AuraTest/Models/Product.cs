@@ -11,7 +11,9 @@ namespace AuraTest.Models
         [Required(ErrorMessage = "Product Name is required.")]
         public string ProductName { get; set; }
 
- 
+        [Required(ErrorMessage = "Product Amount is required.")]
+        public int ProductAmount { get; set; }
+
 
         [Required(ErrorMessage = "Product Category is required.")]
         public int CategoryId { get; set; }  // Foreign key
@@ -37,5 +39,8 @@ namespace AuraTest.Models
 
         [NotMapped]
         public IFormFile ImageFile { get; set; }
+
+
+        public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
     }
 }
