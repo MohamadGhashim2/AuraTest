@@ -96,6 +96,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\3937d8da-ea76-417a-913f-141738f1f341_Screenshot (28).png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\3e9b6516-7c66-4806-94f8-431fa5abbad2_wallpaperflare.com_wallpaper (3).jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuraTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuraTest</BasePath>
+      <RelativePath>img/3e9b6516-7c66-4806-94f8-431fa5abbad2_wallpaperflare.com_wallpaper (3).jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\3e9b6516-7c66-4806-94f8-431fa5abbad2_wallpaperflare.com_wallpaper (3).jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\40b63499-bf90-4a66-860e-ae057d66e5b3__7863fd39-9e8c-4643-a89d-90576c3a103b.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>AuraTest</SourceId>
@@ -111,6 +127,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\40b63499-bf90-4a66-860e-ae057d66e5b3__7863fd39-9e8c-4643-a89d-90576c3a103b.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\40ce06d8-21f7-4436-ae9b-653bd9241e65_Screenshot (33).png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuraTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuraTest</BasePath>
+      <RelativePath>img/40ce06d8-21f7-4436-ae9b-653bd9241e65_Screenshot (33).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\40ce06d8-21f7-4436-ae9b-653bd9241e65_Screenshot (33).png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\46c4120f-7fee-4aaf-b17e-dba97a3af492_Screenshot (6).png))">
       <SourceType>Package</SourceType>
@@ -128,12 +160,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\46c4120f-7fee-4aaf-b17e-dba97a3af492_Screenshot (6).png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5df1f53a-aa62-4572-a3d3-be91967e9b33_DALL·E 2023-12-24 15.32.16 - Design a logo for an interior design shop named 'ALDAR'. The logo should combine modern calligraphy and minimalist iconography. The text 'ALDAR' is wr.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4c7758df-f3ea-41d0-b3af-8883c1b20e0e_Screenshot (170).png))">
       <SourceType>Package</SourceType>
       <SourceId>AuraTest</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/AuraTest</BasePath>
-      <RelativePath>img/5df1f53a-aa62-4572-a3d3-be91967e9b33_DALL·E 2023-12-24 15.32.16 - Design a logo for an interior design shop named 'ALDAR'. The logo should combine modern calligraphy and minimalist iconography. The text 'ALDAR' is wr.png</RelativePath>
+      <RelativePath>img/4c7758df-f3ea-41d0-b3af-8883c1b20e0e_Screenshot (170).png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -142,7 +174,39 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5df1f53a-aa62-4572-a3d3-be91967e9b33_DALL·E 2023-12-24 15.32.16 - Design a logo for an interior design shop named 'ALDAR'. The logo should combine modern calligraphy and minimalist iconography. The text 'ALDAR' is wr.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4c7758df-f3ea-41d0-b3af-8883c1b20e0e_Screenshot (170).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4c937b86-a84a-4734-b880-789f9f6393d8_download.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuraTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuraTest</BasePath>
+      <RelativePath>img/4c937b86-a84a-4734-b880-789f9f6393d8_download.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\4c937b86-a84a-4734-b880-789f9f6393d8_download.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5996efb7-0236-4f17-bd82-c362d039e987_download.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuraTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuraTest</BasePath>
+      <RelativePath>img/5996efb7-0236-4f17-bd82-c362d039e987_download.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\5996efb7-0236-4f17-bd82-c362d039e987_download.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\65874c00-49df-40f5-a5dc-132578262f3b_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg))">
       <SourceType>Package</SourceType>
@@ -159,6 +223,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\65874c00-49df-40f5-a5dc-132578262f3b_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\8c18a3cc-18d9-40dc-b225-2fc5fdc26c77_WhatsApp Image 2023-12-31 at 11.47.33_dbe65875.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuraTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuraTest</BasePath>
+      <RelativePath>img/8c18a3cc-18d9-40dc-b225-2fc5fdc26c77_WhatsApp Image 2023-12-31 at 11.47.33_dbe65875.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\8c18a3cc-18d9-40dc-b225-2fc5fdc26c77_WhatsApp Image 2023-12-31 at 11.47.33_dbe65875.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\8ca88752-3bdb-42b8-8415-dd19c043233a_1_org_zoom.jpg))">
       <SourceType>Package</SourceType>
@@ -207,22 +287,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\a430f78c-0e0a-4cfa-9d53-e2ad9d591289_wallpaperflare.com_wallpaper (3).jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\aaacfc9f-dc03-418c-979a-fead2c324cff_DALL·E 2023-12-24 15.29.29 - A computer engineer, a male of Caucasian descent with bright red hair, is captured in a moment of extreme focus, his hand frozen above the keyboard in.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>AuraTest</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AuraTest</BasePath>
-      <RelativePath>img/aaacfc9f-dc03-418c-979a-fead2c324cff_DALL·E 2023-12-24 15.29.29 - A computer engineer, a male of Caucasian descent with bright red hair, is captured in a moment of extreme focus, his hand frozen above the keyboard in.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\aaacfc9f-dc03-418c-979a-fead2c324cff_DALL·E 2023-12-24 15.29.29 - A computer engineer, a male of Caucasian descent with bright red hair, is captured in a moment of extreme focus, his hand frozen above the keyboard in.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\bf175e15-be0a-41ea-b71d-fdeea32eec3f_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg))">
       <SourceType>Package</SourceType>

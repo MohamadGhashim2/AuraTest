@@ -1,0 +1,22 @@
+﻿@model AuraTest.Models.AdminSettings
+
+
+<form asp-action="AdminSettings" method="post">
+    <div>
+        <label for="FirstFilter">First Filter:</label>
+        <input type="text" id="FirstFilter" name="FirstFilter" value="@Model.FirstFilter" />
+    </div>
+    <div>
+        <label for="SecoundFilter">Second Filter:</label>
+        <input type="text" id="SecoundFilter" name="SecoundFilter" value="@Model.SecoundFilter" />
+    </div>
+    <div>
+        <label for="ThirdFilter">Third Filter:</label>
+        <input type="text" id="ThirdFilter" name="ThirdFilter" value="@Model.ThirdFilter" />
+    </div>
+    <div>
+        <label for="ForthFilter">Fourth Filter:</label>
+        <input type="text" id="ForthFilter" name="ForthFilter" value="@Model.ForthFilter" />
+    </div>
+    <button type="submit">Save</button>
+</form>

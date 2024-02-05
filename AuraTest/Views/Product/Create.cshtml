@@ -18,12 +18,15 @@
                 <span asp-validation-for="ProductName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" asp-items="@ViewBag.CategoryId" class="form-control"></select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                <label asp-for="ProductAmount" class="control-label"></label>
+                <input asp-for="ProductAmount" class="form-control" />
+                <span asp-validation-for="ProductAmount" class="text-danger"></span>
             </div>
-
-
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                @* Use DropDownListFor to render the dropdown *@
+                @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.Categories, "Select Category", new { @class = "form-control" })
+            </div>
             <div class="form-group">
                 <label asp-for="ProductPrice" class="control-label"></label>
                 <input asp-for="ProductPrice" class="form-control" />
@@ -49,7 +52,6 @@
                 <input asp-for="ImageFile" type="file" class="form-control" />
                 <span asp-validation-for="ImageFile" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-  
+
 <h1>Welcome to Our Shop</h1>
-   
 
 <section class="product">
     <h2 class="product-category">الافضل مبيعاً</h2>
@@ -13,10 +12,7 @@
     <button class="nxt-btn">></button>
     <div class="product-container">
      
-        @{
-            int number = 0;        
-        }
-        @foreach(var item in Model)
+        @foreach(var item in ViewBag.FirstModel as List<AuraTest.Models.Product>)
         {
             
             <div class="product-card">
@@ -32,18 +28,13 @@
                 }
                 <div class="product-info">
                     <h2 class="product-brand">@Html.DisplayFor(modelItem=>item.ProductName)</h2>
-                    <p class="product-short-descripton">@Html.DisplayFor(modelItem=>item.ProductDescription)</p>
+                    <p class="product-short-description">@Html.DisplayFor(modelItem => item.ProductDescription)</p>
                     <span class="price">@Html.DisplayFor(modelItem=>item.ProductPrice)</span>
                     <span class="actual-price">@Html.DisplayFor(modelItem => multipliedPrice)</span>
                 </div>
             </div>
             //to break the loop 
             //how many product you want to show
-            number += 1;
-            if (number==15)
-            {
-                break;
-            }
         }
     </div>
 </section>
@@ -52,12 +43,13 @@
 
 
 <section class="product">
-    <h2 class="product-category">الكلاسين</h2>
+    <h2 class="product-category">الكنزات</h2>
     <button class="pre-btn">></button>
     <button class="nxt-btn">></button>
     <div class="product-container">
+
       
-        @foreach (var item in Model)
+        @foreach (var item in ViewBag.SecoundModel as List<AuraTest.Models.Product>)
         {
 
             <div class="product-card">
@@ -73,20 +65,86 @@
                 }
                 <div class="product-info">
                     <h2 class="product-brand">@Html.DisplayFor(modelItem => item.ProductName)</h2>
-                    <p class="product-short-descripton">@Html.DisplayFor(modelItem => item.ProductDescription)</p>
+                    <p class="product-short-description">@Html.DisplayFor(modelItem => item.ProductDescription)</p>
                     <span class="price">@Html.DisplayFor(modelItem => item.ProductPrice)</span>
                     <span class="actual-price">@Html.DisplayFor(modelItem => multipliedPrice)</span>
                 </div>
             </div>
             //to break the loop
             //how many product you want to show
-            number += 1;
-            if (number == 15)
-            {
-                break;
-            }
         }
     </div>
 </section>
-   
+
+
+<section class="product">
+    <h2 class="product-category">الأحذية</h2>
+    <button class="pre-btn">></button>
+    <button class="nxt-btn">></button>
+    <div class="product-container">
+
+
+        @foreach (var item in ViewBag.ThirdModel as List<AuraTest.Models.Product>)
+        {
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
+                    <a src="">
+                        <button class="card-btn">add to cart</button>
+                    </a>
+                </div>
+                @{
+                    decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
+                }
+                <div class="product-info">
+                    <h2 class="product-brand">@Html.DisplayFor(modelItem => item.ProductName)</h2>
+                    <p class="product-short-description">@Html.DisplayFor(modelItem => item.ProductDescription)</p>
+                    <span class="price">@Html.DisplayFor(modelItem => item.ProductPrice)</span>
+                    <span class="actual-price">@Html.DisplayFor(modelItem => multipliedPrice)</span>
+                </div>
+            </div>
+            //to break the loop
+            //how many product you want to show
+        }
+
+    </div>
+</section>
+ 
+
+<section class="product">
+    <h2 class="product-category">الشنط</h2>
+    <button class="pre-btn">></button>
+    <button class="nxt-btn">></button>
+    <div class="product-container">
+
+
+        @foreach (var item in ViewBag.ForthModel as List<AuraTest.Models.Product>)
+        {
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
+                    <a src="">
+                        <button class="card-btn">add to cart</button>
+                    </a>
+                </div>
+                @{
+                    decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
+                }
+                <div class="product-info">
+                    <h2 class="product-brand">@Html.DisplayFor(modelItem => item.ProductName)</h2>
+                    <p class="product-short-description">@Html.DisplayFor(modelItem => item.ProductDescription)</p>
+                    <span class="price">@Html.DisplayFor(modelItem => item.ProductPrice)</span>
+                    <span class="actual-price">@Html.DisplayFor(modelItem => multipliedPrice)</span>
+                </div>
+            </div>
+            //to break the loop
+            //how many product you want to show
+        }
+
+    </div>
+</section>
        

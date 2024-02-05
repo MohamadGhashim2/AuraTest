@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Hosting;
+using System.IO;
+
 
 
 
@@ -22,12 +24,33 @@ namespace AuraTest.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string categoryFilter, string colorFilter, string sizeFilter,int amountFilter)
         {
-            var products = await _context.Products.Include(p => p.Category).ToListAsync();
-            return View(products);
-        }
+            IQueryable<Product> productsQuery = _context.Products.Include(x => x.Category);
+            if (!string.IsNullOrEmpty(categoryFilter))
+            {
+                productsQuery = productsQuery.Where(x => x.Category.CategoryName == categoryFilter);
+            }
 
+            if (!string.IsNullOrEmpty(colorFilter))
+            {
+                productsQuery = productsQuery.Where(x => x.ProductColor == colorFilter);
+            }
+
+            if (!string.IsNullOrEmpty(sizeFilter))
+            {
+                productsQuery = productsQuery.Where(x => x.ProductSize == sizeFilter);
+            }
+            if (!string.IsNullOrEmpty(sizeFilter))
+            {
+                productsQuery = productsQuery.Where(x => x.ProductAmount == amountFilter);
+            }
+
+            var filteredProducts = await productsQuery.ToListAsync();
+        
+
+            return View(filteredProducts);
+        }
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,7 +72,7 @@ namespace AuraTest.Controllers
 
         public IActionResult Create()
         {            
-            ViewBag.CategoryId = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName");
 
             return View();
         }
@@ -70,7 +93,7 @@ namespace AuraTest.Controllers
                 ProductPrice= product.ProductPrice,
                 ProductSize= product.ProductSize,
                 CategoryId= product.CategoryId,
-                
+                ProductAmount= product.ProductAmount,
                 // ...
             };
 
@@ -111,7 +134,7 @@ namespace AuraTest.Controllers
             }
 
             // Populate dropdown for selecting categories
-            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
+            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName");
             return View(product);
         }
 
@@ -173,6 +196,15 @@ namespace AuraTest.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var product = await _context.Products.FindAsync(id);
+            if (!string.IsNullOrEmpty(product.ProductImageUrl))
+            {
+                var imagePath = Path.Combine(_WebHostEnvironment.WebRootPath, "img", product.ProductImageUrl);
+
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
