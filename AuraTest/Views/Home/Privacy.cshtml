@@ -1,12 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using Microsoft.EntityFrameworkCore
-@model IEnumerable<IdentityUser>
-@inject UserManager<IdentityUser> UserManager
+@model IEnumerable<ApplicationUser>
+@inject UserManager<ApplicationUser> UserManager
 
 
 @{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
-
 <p>Use this page to detail your site's privacy policy.</p>

@@ -1,15 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AuraTest.Data;
 using AuraTest.Models;
-using AuraTest.Data;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using System.IO;
-
-
-
 
 namespace AuraTest.Controllers
 {
@@ -18,13 +12,13 @@ namespace AuraTest.Controllers
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _WebHostEnvironment;
 
-        public ProductController(ApplicationDbContext context,IWebHostEnvironment webHostEnvironment)
+        public ProductController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
-            _WebHostEnvironment= webHostEnvironment;
+            _WebHostEnvironment = webHostEnvironment;
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string categoryFilter, string colorFilter, string sizeFilter,int amountFilter)
+        public async Task<IActionResult> Index(string categoryFilter, string colorFilter, string sizeFilter, int amountFilter)
         {
             IQueryable<Product> productsQuery = _context.Products.Include(x => x.Category);
             if (!string.IsNullOrEmpty(categoryFilter))
@@ -47,10 +41,11 @@ namespace AuraTest.Controllers
             }
 
             var filteredProducts = await productsQuery.ToListAsync();
-        
+
 
             return View(filteredProducts);
         }
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -71,9 +66,8 @@ namespace AuraTest.Controllers
         }
 
         public IActionResult Create()
-        {            
+        {
             ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName");
-
             return View();
         }
 
@@ -85,21 +79,21 @@ namespace AuraTest.Controllers
             string stringFileName = await UploadFile(imageFile);
             var product1 = new Product
             {
-                ProductColor=product.ProductColor,
+                ProductColor = product.ProductColor,
                 ProductImageUrl = stringFileName,
-                ProductDescription= product.ProductDescription,
-                ProductId= product.ProductId,
-                ProductName= product.ProductName,
-                ProductPrice= product.ProductPrice,
-                ProductSize= product.ProductSize,
-                CategoryId= product.CategoryId,
-                ProductAmount= product.ProductAmount,
+                ProductDescription = product.ProductDescription,
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                ProductPrice = product.ProductPrice,
+                ProductSize = product.ProductSize,
+                CategoryId = product.CategoryId,
+                ProductAmount = product.ProductAmount,
                 // ...
             };
 
-                _context.Add(product1);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            _context.Add(product1);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
         private async Task<string> UploadFile(IFormFile file)
         {
@@ -134,42 +128,41 @@ namespace AuraTest.Controllers
             }
 
             // Populate dropdown for selecting categories
-            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName");
-            return View(product);
+            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "CategoryName"); return View(product);
         }
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Product product,IFormFile imageFile)
+        public async Task<IActionResult> Edit(int id, Product product, IFormFile imageFile)
         {
             if (id != product.ProductId)
             {
                 return NotFound();
             }
             string stringFileName = await UploadFile(imageFile);
-                   var product1 = new Product
+            var product1 = new Product
             {
-                ProductColor=product.ProductColor,
+                ProductColor = product.ProductColor,
                 ProductImageUrl = stringFileName,
-                ProductDescription= product.ProductDescription,
-                ProductId= product.ProductId,
-                ProductName= product.ProductName,
-                ProductPrice= product.ProductPrice,
-                ProductSize= product.ProductSize,
-                CategoryId= product.CategoryId,
-                
+                ProductDescription = product.ProductDescription,
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                ProductPrice = product.ProductPrice,
+                ProductSize = product.ProductSize,
+                CategoryId = product.CategoryId,
+
                 // ...
             };
-                    _context.Update(product1);
-                    await _context.SaveChangesAsync();
-            
-                    if (!ProductExists(product.ProductId))
-                    {
-                        return NotFound();
-                    }
-             
-                return RedirectToAction(nameof(Index));
+            _context.Update(product1);
+            await _context.SaveChangesAsync();
+
+            if (!ProductExists(product.ProductId))
+            {
+                return NotFound();
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Delete(int? id)

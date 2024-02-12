@@ -1,52 +1,30 @@
-﻿@using Microsoft.AspNetCore.Identity
-@using Microsoft.EntityFrameworkCore
-@model IEnumerable<IdentityUser>
-@inject UserManager<IdentityUser> UserManager
-@inject RoleManager<IdentityRole> RoleManager
-
+﻿@model IEnumerable<AuraTest.Models.ApplicationUser>
 @{
-    ViewData["Title"] = "Application Users";
+    var userManager = ViewBag.UserManager;
 }
-
-<h1>View Users</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.Id)</th>
-            <th>@Html.DisplayNameFor(model => model.Email)</th>
-            <th>Roles</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@Html.DisplayFor(modelItem => item.Id)</td>
-                <td>@Html.DisplayFor(modelItem => item.Email)</td>
-                <td>
-                    @foreach (var role in await UserManager.GetRolesAsync(item))
-                    {
-                        <span>@role</span>
-                    }
-                </td>
-                <td>
-                    <form asp-controller="UserManagement" asp-action="UpdateRoles" method="post">
-                        <input type="hidden" name="userId" value="@item.Id" />
-                        <div class="form-group">
-                            <label for="roles">Roles:</label>
-                            <select class="form-control" id="roles" name="roles">
-                                @foreach (var role in await RoleManager.Roles.ToListAsync())
-                                {
-                                    <option value="@role.Name">@role.Name</option>
-                                }
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Update Roles</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@foreach (var user in Model)
+{
+    <div>
+        <p>Email: @Html.DisplayFor(modelItem => user.Email)</p>
+        <p>
+            Current Role:
+            @foreach (var role in ViewBag.Roles)
+            {
+                if (userManager != null && await userManager.IsInRoleAsync(user, role.Name))
+                {
+                    <span>@role.Name</span>
+                }
+            }
+        </p>
+        <form asp-action="ChangeRole" asp-controller="UserManagement">
+            <input type="hidden" name="userId" value="@user.Id" />
+            <select name="roleName">
+                @foreach (var role in ViewBag.Roles)
+                {
+                    <option value="@role.Name">@role.Name</option>
+                }
+            </select>
+            <button type="submit">Change Role</button>
+        </form>
+    </div>
+}

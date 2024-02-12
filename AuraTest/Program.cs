@@ -1,15 +1,7 @@
 using AuraTest.Data;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+using AuraTest.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using System;
-using System.Threading.Tasks;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,11 +11,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>().AddDefaultTokenProviders().
-    AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 builder.Services.AddControllersWithViews();
-CreateDefaultRoles(builder.Services.BuildServiceProvider()).GetAwaiter().GetResult();
+CreateRoles(builder.Services.BuildServiceProvider()).GetAwaiter().GetResult();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -49,24 +43,31 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapControllerRoute(
-    name: "admin",
-    pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
-async Task CreateDefaultRoles(IServiceProvider serviceProvider)
+async Task CreateRoles(IServiceProvider serviceProvider)
 {
     var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-    // Add your default roles here
-    string[] defaultRoles = { "Admin", "Manager", "User" };
-
-    foreach (var roleName in defaultRoles)
+    var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+    if (!await roleManager.RoleExistsAsync("USER"))
     {
-        if (!await roleManager.RoleExistsAsync(roleName))
-        {
-            await roleManager.CreateAsync(new IdentityRole(roleName));
-        }
+        var adminRole = new IdentityRole("USER");
+        await roleManager.CreateAsync(adminRole);
+
+
+    }
+    if (!await roleManager.RoleExistsAsync("ADMIN"))
+    {
+        var adminRole = new IdentityRole("ADMIN");
+        await roleManager.CreateAsync(adminRole);
+
+
+    }
+    if (!await roleManager.RoleExistsAsync("MANAGER"))
+    {
+        var adminRole = new IdentityRole("MANAGER");
+        await roleManager.CreateAsync(adminRole);
+
+
     }
 }
-
 app.Run();

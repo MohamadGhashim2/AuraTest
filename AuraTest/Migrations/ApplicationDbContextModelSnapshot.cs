@@ -178,7 +178,7 @@ namespace AuraTest.Migrations
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("AuraTest.Models.Categories", b =>
+            modelBuilder.Entity("AuraTest.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -414,7 +414,7 @@ namespace AuraTest.Migrations
 
             modelBuilder.Entity("AuraTest.Models.Product", b =>
                 {
-                    b.HasOne("AuraTest.Models.Categories", "Category")
+                    b.HasOne("AuraTest.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -484,7 +484,7 @@ namespace AuraTest.Migrations
                     b.Navigation("CartItems");
                 });
 
-            modelBuilder.Entity("AuraTest.Models.Categories", b =>
+            modelBuilder.Entity("AuraTest.Models.Category", b =>
                 {
                     b.Navigation("Products");
                 });

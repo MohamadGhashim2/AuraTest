@@ -10,16 +10,14 @@ namespace AuraTest.Models
 
         [Required(ErrorMessage = "Product Name is required.")]
         public string ProductName { get; set; }
-
         [Required(ErrorMessage = "Product Amount is required.")]
         public int ProductAmount { get; set; }
 
-
         [Required(ErrorMessage = "Product Category is required.")]
-        public int CategoryId { get; set; }  // Foreign key
+        public int CategoryId { get; set; }  
 
-        [ForeignKey("CategoryId")]  // Establishing the foreign key relationship
-        public virtual Categories Category { get; set; }  // Navigation pr
+        [ForeignKey("CategoryId")]  
+        public virtual Category Category { get; set; }  
 
         [Required(ErrorMessage = "Product Price is required.")]
         [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0.")]

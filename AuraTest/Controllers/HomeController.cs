@@ -10,12 +10,12 @@ namespace AuraTest.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
-
         public HomeController(ApplicationDbContext context, ILogger<HomeController> logger)
         {
             _context = context;
             _logger = logger;
         }
+
         public async Task<IActionResult> Index()
         {
             var adminSettings = GetAdminSettings();
@@ -59,7 +59,6 @@ namespace AuraTest.Controllers
         {
             return View();
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -27,6 +27,8 @@
                 @* Use DropDownListFor to render the dropdown *@
                 @Html.DropDownListFor(model => model.CategoryId, (SelectList)ViewBag.Categories, "Select Category", new { @class = "form-control" })
             </div>
+
+
             <div class="form-group">
                 <label asp-for="ProductPrice" class="control-label"></label>
                 <input asp-for="ProductPrice" class="form-control" />
@@ -52,6 +54,7 @@
                 <input asp-for="ImageFile" type="file" class="form-control" />
                 <span asp-validation-for="ImageFile" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -64,5 +67,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,323 +1,267 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AuraTest.bundle.scp.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AuraTest.bundle.scp.css",
       "PackagePath": "staticwebassets\\AuraTest.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\1469e3cf-b4e5-4ca6-8a04-d00b5e8893b2_download (1).jpeg",
-      "PackagePath": "staticwebassets\\img\\1469e3cf-b4e5-4ca6-8a04-d00b5e8893b2_download (1).jpeg"
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\img\\146a8209-d2cc-4a32-93d1-efaf7968f0f1_download.jpeg",
+      "PackagePath": "staticwebassets\\img\\146a8209-d2cc-4a32-93d1-efaf7968f0f1_download.jpeg"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\294232ce-041f-4ff8-91d8-3eae050b37df_S93fd9469e3de40e489f1fd0fbacca818R.jpg_640x640Q90.jpg_.webp",
-      "PackagePath": "staticwebassets\\img\\294232ce-041f-4ff8-91d8-3eae050b37df_S93fd9469e3de40e489f1fd0fbacca818R.jpg_640x640Q90.jpg_.webp"
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\img\\3b50449e-ae3f-422a-b694-f237be532d02_download.jpeg",
+      "PackagePath": "staticwebassets\\img\\3b50449e-ae3f-422a-b694-f237be532d02_download.jpeg"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\3937d8da-ea76-417a-913f-141738f1f341_Screenshot (28).png",
-      "PackagePath": "staticwebassets\\img\\3937d8da-ea76-417a-913f-141738f1f341_Screenshot (28).png"
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\img\\4cbedbbd-2b46-4482-91a5-a5a2498fb5e7_download.jpeg",
+      "PackagePath": "staticwebassets\\img\\4cbedbbd-2b46-4482-91a5-a5a2498fb5e7_download.jpeg"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\3e9b6516-7c66-4806-94f8-431fa5abbad2_wallpaperflare.com_wallpaper (3).jpg",
-      "PackagePath": "staticwebassets\\img\\3e9b6516-7c66-4806-94f8-431fa5abbad2_wallpaperflare.com_wallpaper (3).jpg"
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\img\\d5e56874-7a83-4128-9509-ff145cc06315_download.jpeg",
+      "PackagePath": "staticwebassets\\img\\d5e56874-7a83-4128-9509-ff145cc06315_download.jpeg"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\40b63499-bf90-4a66-860e-ae057d66e5b3__7863fd39-9e8c-4643-a89d-90576c3a103b.jpeg",
-      "PackagePath": "staticwebassets\\img\\40b63499-bf90-4a66-860e-ae057d66e5b3__7863fd39-9e8c-4643-a89d-90576c3a103b.jpeg"
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\img\\e6d7f4df-7c93-4482-badf-a16a12d5f58b_download.jpeg",
+      "PackagePath": "staticwebassets\\img\\e6d7f4df-7c93-4482-badf-a16a12d5f58b_download.jpeg"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\40ce06d8-21f7-4436-ae9b-653bd9241e65_Screenshot (33).png",
-      "PackagePath": "staticwebassets\\img\\40ce06d8-21f7-4436-ae9b-653bd9241e65_Screenshot (33).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\46c4120f-7fee-4aaf-b17e-dba97a3af492_Screenshot (6).png",
-      "PackagePath": "staticwebassets\\img\\46c4120f-7fee-4aaf-b17e-dba97a3af492_Screenshot (6).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\4c7758df-f3ea-41d0-b3af-8883c1b20e0e_Screenshot (170).png",
-      "PackagePath": "staticwebassets\\img\\4c7758df-f3ea-41d0-b3af-8883c1b20e0e_Screenshot (170).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\4c937b86-a84a-4734-b880-789f9f6393d8_download.jpeg",
-      "PackagePath": "staticwebassets\\img\\4c937b86-a84a-4734-b880-789f9f6393d8_download.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\5996efb7-0236-4f17-bd82-c362d039e987_download.jpeg",
-      "PackagePath": "staticwebassets\\img\\5996efb7-0236-4f17-bd82-c362d039e987_download.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\65874c00-49df-40f5-a5dc-132578262f3b_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg",
-      "PackagePath": "staticwebassets\\img\\65874c00-49df-40f5-a5dc-132578262f3b_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\8c18a3cc-18d9-40dc-b225-2fc5fdc26c77_WhatsApp Image 2023-12-31 at 11.47.33_dbe65875.jpg",
-      "PackagePath": "staticwebassets\\img\\8c18a3cc-18d9-40dc-b225-2fc5fdc26c77_WhatsApp Image 2023-12-31 at 11.47.33_dbe65875.jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\8ca88752-3bdb-42b8-8415-dd19c043233a_1_org_zoom.jpg",
-      "PackagePath": "staticwebassets\\img\\8ca88752-3bdb-42b8-8415-dd19c043233a_1_org_zoom.jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\965ea324-876d-436a-a408-d35648f8706b_images.jpg",
-      "PackagePath": "staticwebassets\\img\\965ea324-876d-436a-a408-d35648f8706b_images.jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\a430f78c-0e0a-4cfa-9d53-e2ad9d591289_wallpaperflare.com_wallpaper (3).jpg",
-      "PackagePath": "staticwebassets\\img\\a430f78c-0e0a-4cfa-9d53-e2ad9d591289_wallpaperflare.com_wallpaper (3).jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\bf175e15-be0a-41ea-b71d-fdeea32eec3f_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg",
-      "PackagePath": "staticwebassets\\img\\bf175e15-be0a-41ea-b71d-fdeea32eec3f_mxH0fDPUazyoPHSYs66UyhYAih0eIrhRKpbbPIOe.jpg"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\d30c5a60-dee4-4efd-ba83-0c841a0e73e5_Screenshot (18).png",
-      "PackagePath": "staticwebassets\\img\\d30c5a60-dee4-4efd-ba83-0c841a0e73e5_Screenshot (18).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\e3a69b46-2f8b-43f9-9a5c-c3e7a07db864_Screenshot (9).png",
-      "PackagePath": "staticwebassets\\img\\e3a69b46-2f8b-43f9-9a5c-c3e7a07db864_Screenshot (9).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\img\\f236c2f0-6955-4a96-9bb0-b61f9eb2a3cd_Screenshot (103).png",
-      "PackagePath": "staticwebassets\\img\\f236c2f0-6955-4a96-9bb0-b61f9eb2a3cd_Screenshot (103).png"
-    },
-    {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

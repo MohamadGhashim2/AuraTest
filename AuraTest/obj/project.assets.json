@@ -11575,11 +11575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\AuraTest.csproj",
+      "projectUniqueName": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\AuraTest.csproj",
       "projectName": "AuraTest",
-      "projectPath": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\AuraTest.csproj",
+      "projectPath": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\AuraTest.csproj",
       "packagesPath": "C:\\Users\\mgrm3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mgrm3\\Desktop\\AuraTest\\AuraTest\\obj\\",
+      "outputPath": "C:\\Users\\mgrm3\\source\\AuraTest\\AuraTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

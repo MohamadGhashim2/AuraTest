@@ -8,7 +8,7 @@ namespace AuraTest.Models
         [Key]
         public int ItemId { get; set; }
         [ForeignKey("Cart")]
-        public int CartId { get; set;}
+        public int CartId { get; set; }
         public virtual Cart Cart { get; set; }
         [ForeignKey("Product")]
         public int ProductId { get; set; }

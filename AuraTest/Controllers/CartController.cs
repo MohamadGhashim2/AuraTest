@@ -27,13 +27,13 @@ namespace AuraTest.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Cart cart)
         {
-          
-                _context.Add(cart);
-                await _context.SaveChangesAsync();
-    
-       
-        
-            
+
+            _context.Add(cart);
+            await _context.SaveChangesAsync();
+
+
+
+
             return View(cart);
         }
     }

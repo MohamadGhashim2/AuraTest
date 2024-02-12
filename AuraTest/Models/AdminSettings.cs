@@ -10,6 +10,6 @@ namespace AuraTest.Models
         public string SecoundFilter { get; set; }
         public string ThirdFilter { get; set; }
         public string ForthFilter { get; set; }
-        
+
     }
 }
