@@ -20,6 +20,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using AuraTest.Data;
+using MessagePack.Formatters;
+using System.Net.Mail;
+using System.Security.Cryptography.X509Certificates;
+using System.Net;
 
 namespace AuraTest.Areas.Identity.Pages.Account
 {
@@ -151,13 +155,14 @@ namespace AuraTest.Areas.Identity.Pages.Account
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",
                         pageHandler: null,
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+                    await SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
@@ -179,7 +184,37 @@ namespace AuraTest.Areas.Identity.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+        private async Task<bool> SendEmailAsync(string email,string subject,string confirmlink) 
+        {
+            try
+            {
 
+                MailMessage message = new MailMessage();
+                SmtpClient smtpClient= new SmtpClient();
+                message.From = new MailAddress("mgrm334@gmail.com");
+                message.To.Add(email);
+                message.Subject = subject;
+                message.IsBodyHtml= true;
+                message.Body =confirmlink;
+
+                smtpClient.Port = 587;
+                smtpClient.Host = "smtp.gmail.com";
+
+
+                smtpClient.EnableSsl= true;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential("mgrm334@gmail.com", "cdaovwpaeibqttue ");
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtpClient.Send(message);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+
+        }
         private ApplicationUser CreateUser()
         {
             try
@@ -203,4 +238,6 @@ namespace AuraTest.Areas.Identity.Pages.Account
             return (IUserEmailStore<ApplicationUser>)_userStore;
         }
     }
+
+ 
 }

@@ -1,5 +1,7 @@
-﻿@model IEnumerable<AuraTest.Models.Product>
-
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<AuraTest.Models.Product>
+@inject UserManager<ApplicationUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
 @{
     ViewData["Title"] = "Index";
 }
@@ -25,17 +27,35 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    
-
-                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
-                        <input type="hidden" class="productAmount" value="@item.ProductAmount" />
-                        <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
-                        <button class="card-btn Stack-Empty d-none">Stack Empty</button>
-                        </form>
-                    
-                   
-                        
-                    
+                    @if (SignInManager.IsSignedIn(User))
+                    {   
+                        if (item.ProductAmount>0)
+                        {
+                            <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                                <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
+                            </form>
+                            
+                        }
+                        else
+                        {
+                            <button class="card-btn Stack-Empty">Stack Empty</button>
+                        }
+                    }
+                    else
+                    {
+                        if (item.ProductAmount>0)
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button type="submit" class="card-btn">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button class="card-btn Stack-Empty">Stack Empty</button>
+                            </form>
+                        }
+                    }
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
@@ -67,15 +87,34 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    @if (item.ProductAmount > 0)
+                    @if (SignInManager.IsSignedIn(User))
                     {
-                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
-                            <button type="submit" class="card-btn">Add to Cart</button>
-                        </form>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                                <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
+                            </form>
+
+                        }
+                        else
+                        {
+                            <button class="card-btn Stack-Empty">Stack Empty</button>
+                        }
                     }
                     else
                     {
-                        <button class="card-btn">Stack Empty</button>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button type="submit" class="card-btn">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button class="card-btn Stack-Empty">Stack Empty</button>
+                            </form>
+                        }
                     }
                 </div>
                 @{
@@ -109,15 +148,34 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    @if (item.ProductAmount > 0)
+                    @if (SignInManager.IsSignedIn(User))
                     {
-                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
-                            <button type="submit" class="card-btn">Add to Cart</button>
-                        </form>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                                <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
+                            </form>
+
+                        }
+                        else
+                        {
+                            <button class="card-btn Stack-Empty">Stack Empty</button>
+                        }
                     }
                     else
                     {
-                        <button class="card-btn">Stack Empty</button>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button type="submit" class="card-btn">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button class="card-btn Stack-Empty">Stack Empty</button>
+                            </form>
+                        }
                     }
                 </div>
                 @{
@@ -151,17 +209,35 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    @if (item.ProductAmount > 0)
+                    @if (SignInManager.IsSignedIn(User))
                     {
-                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
-                            <button type="submit" class="card-btn">Add to Cart</button>
-                        </form>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                                <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
+                            </form>
+
+                        }
+                        else
+                        {
+                            <button class="card-btn Stack-Empty">Stack Empty</button>
+                        }
                     }
                     else
                     {
-                        <button class="card-btn">Stack Empty</button>
+                        if (item.ProductAmount > 0)
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button type="submit" class="card-btn">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-controller="Cart" asp-action="IsSignin" method="post">
+                                <button class="card-btn Stack-Empty">Stack Empty</button>
+                            </form>
+                        }
                     }
-
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;

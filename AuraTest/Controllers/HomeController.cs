@@ -64,7 +64,7 @@ namespace AuraTest.Controllers
                 .Include(c => c.CartItems)
                 .FirstOrDefaultAsync(c => c.UserId == user.Id);
                 ViewBag.cart = cart;
-
+                
             }
            
 

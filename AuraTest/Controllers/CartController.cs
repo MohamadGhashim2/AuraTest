@@ -1,6 +1,7 @@
 ﻿using AuraTest.Data;
 using AuraTest.Migrations;
 using AuraTest.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -11,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuraTest.Controllers
 {
-    [Authorize]
+    
     public class CartController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -23,13 +24,12 @@ namespace AuraTest.Controllers
             _userManager = userManager;
             _WebHostEnvironment = webHostEnvironment;
         }
-       
 
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             // Retrieve the current user
             var user = await _userManager.GetUserAsync(User);
-
             // Find the cart associated with the current user
       
             var cart = await _context.Carts
@@ -38,16 +38,18 @@ namespace AuraTest.Controllers
             ViewBag.product = await _context.Products.ToListAsync();
             return View(cart);
         }
-       
-     
 
+        public IActionResult IsSignin()
+        {
+            return Challenge(new AuthenticationProperties { RedirectUri = "/" });
+        }
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddToCart(int productId)
         {
             // Retrieve the current user
             var user = await _userManager.GetUserAsync(User);
-
             // Find or create the cart associated with the current user
             var cart = await _context.Carts.Include(c=>c.CartItems).FirstOrDefaultAsync(c => c.UserId == user.Id);
             if (cart == null)
@@ -86,9 +88,13 @@ namespace AuraTest.Controllers
             var product1 = await _context.Products.FindAsync(productId);
             LogEditAction("User " + user.FirstName + " " + user.LastName+" Added the product with ID " + product1.ProductId+" To The Cart with id "+cart.CartId);
             await _context.SaveChangesAsync();
-        
+            if (product1.ProductAmount<=0)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return NoContent();
         }
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int itemId)
@@ -139,7 +145,7 @@ namespace AuraTest.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
+        
 
 
         private void LogEditAction(string message)
