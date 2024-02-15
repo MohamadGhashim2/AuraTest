@@ -5,13 +5,18 @@
 }
 
 <h1>Welcome to Our Shop</h1>
+<div id="cartPopup" class="cart-popup">
+    <div class="cart-content">
+        <partial name="_CartPartial" />
+    </div>
+    <button id="closePopup">Close</button>
+</div>
 
 <section class="product">
     <h2 class="product-category">الافضل مبيعاً</h2>
     <button class="pre-btn">></button>
     <button class="nxt-btn">></button>
     <div class="product-container">
-
       
         @foreach (var item in ViewBag.FirstModel as List<AuraTest.Models.Product>)
         {
@@ -20,9 +25,17 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    <a src="">
-                        <button class="card-btn">add to cart</button>
-                    </a>
+                    
+
+                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                        <input type="hidden" class="productAmount" value="@item.ProductAmount" />
+                        <button type="submit" class="card-btn Stack-Full">Add to Cart</button>
+                        <button class="card-btn Stack-Empty d-none">Stack Empty</button>
+                        </form>
+                    
+                   
+                        
+                    
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
@@ -39,6 +52,7 @@
         }
     </div>
 </section>
+    
 
 <section class="product">
     <h2 class="product-category">الكنزات</h2>
@@ -46,7 +60,6 @@
     <button class="nxt-btn">></button>
     <div class="product-container">
 
-     
         @foreach (var item in ViewBag.SecoundModel as List<AuraTest.Models.Product>)
         {
 
@@ -54,9 +67,16 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    <a src="">
-                        <button class="card-btn">add to cart</button>
-                    </a>
+                    @if (item.ProductAmount > 0)
+                    {
+                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                            <button type="submit" class="card-btn">Add to Cart</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button class="card-btn">Stack Empty</button>
+                    }
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
@@ -89,9 +109,16 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    <a src="">
-                        <button class="card-btn">add to cart</button>
-                    </a>
+                    @if (item.ProductAmount > 0)
+                    {
+                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                            <button type="submit" class="card-btn">Add to Cart</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button class="card-btn">Stack Empty</button>
+                    }
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;
@@ -124,9 +151,17 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="~/img/@item.ProductImageUrl" class="product-thumb" />
-                    <a src="">
-                        <button class="card-btn">add to cart</button>
-                    </a>
+                    @if (item.ProductAmount > 0)
+                    {
+                        <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@item.ProductId" method="post">
+                            <button type="submit" class="card-btn">Add to Cart</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button class="card-btn">Stack Empty</button>
+                    }
+
                 </div>
                 @{
                     decimal multipliedPrice = Convert.ToDecimal(item.ProductPrice) * 2;

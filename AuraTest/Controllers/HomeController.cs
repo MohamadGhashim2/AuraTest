@@ -1,8 +1,11 @@
 ﻿using AuraTest.Data;
 using AuraTest.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace AuraTest.Controllers
 {
@@ -10,10 +13,14 @@ namespace AuraTest.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
-        public HomeController(ApplicationDbContext context, ILogger<HomeController> logger)
+        private readonly UserManager<ApplicationUser> _userManager;
+        
+       
+        public HomeController(ApplicationDbContext context, ILogger<HomeController> logger,UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _logger = logger;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
@@ -49,8 +56,23 @@ namespace AuraTest.Controllers
             ViewBag.ThirdModel = thirdModel;
             ViewBag.ForthModel = forthModel;
             var products = await _context.Products.ToListAsync();
+            var user = await _userManager.GetUserAsync(User);
+            
+            if (user!=null)
+            {
+                var cart = await _context.Carts
+                .Include(c => c.CartItems)
+                .FirstOrDefaultAsync(c => c.UserId == user.Id);
+                ViewBag.cart = cart;
+
+            }
+           
+
+            
             return View(products);
         }
+        
+       
         private AdminSettings GetAdminSettings()
         {
             return _context.AdminSettings.FirstOrDefault() ?? new AdminSettings();

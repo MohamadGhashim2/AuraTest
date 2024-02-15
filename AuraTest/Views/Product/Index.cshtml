@@ -18,7 +18,7 @@
                 var categories = Model.Select(p => p.Category.CategoryName).Distinct();
                 foreach (var category in categories)
                 {
-                    <option value="@category">@category</option>
+                        <option value="@category">@category</option>
                 }
             }
         </select>
@@ -30,7 +30,7 @@
                 var colors = Model.Select(p => p.ProductColor).Distinct();
                 foreach (var color in colors)
                 {
-                    <option value="@color">@color</option>
+                        <option value="@color">@color</option>
                 }
             }
         </select>
@@ -42,7 +42,7 @@
                 var sizes = Model.Select(p => p.ProductSize).Distinct();
                 foreach (var size in sizes)
                 {
-                    <option value="@size">@size</option>
+                        <option value="@size">@size</option>
                 }
             }
         </select>
@@ -53,7 +53,7 @@
                 var amounts = Model.Select(p => p.ProductAmount).Distinct();
                 foreach (var amount in amounts)
                 {
-                    <option value="@amount">@amount</option>
+                        <option value="@amount">@amount</option>
                 }
             }
         </select>
@@ -135,7 +135,16 @@
                     <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
                 </td>
+                <td>
+                    <a class="BUTTON1">Click Here</a>
+                    <div class ="span1 d-none">
+
+                    <span >Im'here</span>
+                    <span> im gere </span>
+                    </div>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+               

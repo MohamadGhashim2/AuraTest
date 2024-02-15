@@ -12,6 +12,7 @@
             {
                 if (userManager != null && await userManager.IsInRoleAsync(user, role.Name))
                 {
+                    
                     <span>@role.Name</span>
                 }
             }

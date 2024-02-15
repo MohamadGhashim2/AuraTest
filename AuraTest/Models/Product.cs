@@ -35,6 +35,7 @@ namespace AuraTest.Models
         [Url(ErrorMessage = "Invalid Image URL.")]
         public string ProductImageUrl { get; set; }
 
+
         [NotMapped]
         public IFormFile ImageFile { get; set; }
 

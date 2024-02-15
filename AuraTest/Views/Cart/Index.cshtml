@@ -1,64 +1,58 @@
-﻿@model IEnumerable<AuraTest.Models.Product>
+﻿@model AuraTest.Models.Cart
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Products</h1>
+<h1>Index</h1>
 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductPrice)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductColor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductImageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductSize)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div>
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductPrice)tl
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductColor)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductDescription)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductImageUrl)
-                </td>
-                <td>
-                    <img style="width:20%; height:auto" src="~/img/@item.ProductImageUrl" />
-                </td>
-                <td>
-                    <a asp-action="Create" asp-controller="Cart">addtocart</a> |
-                    <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-
-                </td>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Action</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var cartItem in Model.CartItems)
+            {
+                <tr>
+                    <td>
+                        @foreach (var product in ViewBag.product)
+                        {
+                            if (product.ProductId == cartItem.ProductId)
+                            {
+                                @product.ProductName
+                            }
+                        }
+                    </td>
+                    <td>
+                        @foreach (var product in ViewBag.product)
+                        {
+                            if (product.ProductId == cartItem.ProductId)
+                            {
+                                <img src="~/img/@product.ProductImageUrl" style="width:20%" />
+                            }
+                        }
+                    </td>
+                    <td>@cartItem.ProductAmount</td>
+                    <td>
+                        <!-- Add a form for deleting the cart item -->
+                        <form asp-action="Delete" method="post">
+                            <input type="hidden" name="itemId" value="@cartItem.ItemId" /> <!-- Pass itemId to the delete action -->
+                            <button type="submit" class="btn btn-danger">-</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CartId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
