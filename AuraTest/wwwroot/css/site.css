@@ -1,11 +1,33 @@
+:root {
+    --primary-color: #baebeb;
+    --secoundary-color: #008081;
+    --third-color: #b9dbda;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(-10deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1) rotate(-10deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1) rotate(-10deg);
+        opacity: 1;
+    }
+}
+
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
 }
-
+*, html {
+    scroll-behavior: smooth !important;
+}
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
     font-size: 14px;
 }
 
@@ -15,96 +37,490 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    margin: 0;
+   
+    background-color:#effefd;
+
 }
 
 div {
     overflow-x: hidden;
     display: block;
 }
+.promo-banner {
+    background-color: var(--third-color);
+    height: 20em;
+    padding: 1em;
+    overflow: hidden;
+
+}
+.promo-banner-table {
+    background-color: var(--secoundary-color);
+    width:70%;
+    margin:auto;
+    border-radius: 47% 53% 53% 47% / 0% 0% 100% 100%;
+    filter: drop-shadow(-10px 4px 15px #369294);
+
+}
+.promo-banner-card {
+
+    display: flex;
+    justify-content: space-between; /* This will space out the child elements */
+    align-items: center; /* This will vertically align the child elements in the middle */
+    height:19em;
+    overflow:hidden;
+
+}
+
+.promo-banner-img,
+.promo-banner-img-2,
+.promo-banner-img-3 {
+    flex: 1; /* Each child will take equal space */
+    margin: auto; /* Add margin to create gaps between cards */
+    overflow: hidden;
+    margin-top:1.4em;
+    position: relative; /* Needed for absolute positioning of the overlay text */
+    height: 100%;
+
+    display: block; /* Display block to enable width and margin to work */
+}
+.promo-banner-img-section {
+    width: 60%;
+    overflow: hidden;
+    margin: auto;
+
+    border-radius: 10% / 30%;
+    height: auto;
+}
+.promo-banner-img-section img {
+   
+    
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    /* Smooth transition for scaling */
+}
+
+    .promo-banner-img-section img:hover {
+        transform: scale(1.05);
+        overflow: hidden;
+    }
+
+.overlay-text {
+    position: absolute;
+    top: -0.6em;
+    right:4em;
+    width: 100%;
+    text-align: center; /* Center the text horizontally */
+    color: var(--secoundary-color);
+    font-size: 2em; /* Adjust as needed for responsiveness */
+    font-weight: bold;
+    padding: 0.5em 0; /* Add padding at the top and bottom */
+    animation: pulse 1s infinite;
+}
 
 
 
+
+/*products display*/
+
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container {
+    padding: 0vw 1vw;
+    display: flex;
+    width: 100%;
+    margin-bottom:1vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+    .product-container::-webkit-scrollbar {
+        display: none;
+    }
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 350px;
+    transform: translateX(0vw);
+    margin-right: 50px;
+    background-color: #f6fefd;
+    border-radius: 20px;
+}
+
+.product-image {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    border-radius: 20px;
+}
+
+    .product-image:hover {
+        transform: scale(1.05);
+    }
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discount-tag {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #009688;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background-color: #009688;
+    color: #fff;
+}
+
+.product-info {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.product-short-description {
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+    margin-top: -1em;
+    border: none;
+    border-radius: 0% 100% 100% 0% / 0% 5% 2% 55%;
+    height: 20em;
+    width: 2.5em;
+    background-color: #effefd;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+    filter: drop-shadow(10px 0px 3mm #f5fcfb);
+}
+
+.pre-btn {
+    left: 0;
+}
+
+
+.nxt-btn {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.pre-btn:hover {
+    background-color: var(--secoundary-color);
+    filter: drop-shadow(10px 0px 8px #008081);
+    opacity: 1;
+}
+
+
+.nxt-btn:hover {
+    background-color: var(--secoundary-color);
+    filter: drop-shadow(10px 0px 8px #008081);
+    opacity: 1;
+}
+
+
+
+/*products display*/
 /*resopnsive*/
-
-
-
 
 /*xxs*/
 @media(min-width:320px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 97%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
+    /*products display*/
+    .product {
+        padding: 2px;
     }
+
+    .product-category {
+        padding: 0 2vw;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .product-container {
+        overflow-x: auto;
+    }  
+
+    .product-card {
+        width: 13em;
+        height: 320px;
+        margin-right: 5px;
+    }
+
+    .product-image {
+        width: 90%;
+        height: 200px;
+    }
+
+    .discount-tag {
+        padding: 2px;
+        font-size:13px;
+    }
+
+    .card-btn {
+        padding: 6px;
+        width: 80%;
+        opacity: 1;
+    }
+    .product-info {
+        margin-right:7px;
+    }
+
+    .price {
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .pre-btn,
+    .nxt-btn {
+        display:none;
+    }
+    /*products display*/
+
 }
+
 /*xs*/
 @media(min-width:457px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 97%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
-    }
+ 
+
 }
 /*sm*/
 @media(min-width:768px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 150%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
+    /*products display*/
+    .product {
+        padding: 8px;
+        margin-right:-7px
     }
+
+    .product-category {
+        padding: 0 0.2vw;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+   
+    .product-card {
+        width: 16em;
+        margin-right:2px;
+    }
+
+   
+
+    .discount-tag {
+        font-size: 15px;
+    }
+
+    .card-btn {
+        padding: 8px;
+    }
+
+    .product-info {
+        margin-right: 13px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        display: none;
+    }
+    /*products display*/
+ 
 }
+
 /*md*/
 @media(min-width:1024px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 170%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
+    /*products display*/
+    .product {
+        padding: 20px;
+        margin-right: -7px
     }
+
+    .product-category {
+        padding: 0 3vw;
+        font-size: 21px;
+        margin-bottom: 14px;
+    }
+    .product-card {
+        width: 20em;
+        margin-right: 15px;
+    }
+    .product-container {
+        overflow-x:hidden;
+    }
+    .discount-tag {
+        font-size: 20px;
+    }
+    .card-btn {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        width: 90%;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .product-card:hover .card-btn {
+        opacity: 1;
+    }
+
+    .card-btn:hover {
+        background-color: #009688;
+        color: #fff;
+    }
+    .pre-btn,
+    .nxt-btn {
+        margin-top: -1em;
+        border: none;
+        border-radius: 0% 100% 100% 0% / 0% 5% 2% 55%;
+        height: 20em;
+        width: 2.5em;
+        background-color: #effefd;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 9;
+        filter: drop-shadow(10px 0px 3mm #f5fcfb);
+    }
+
+    .pre-btn {
+        left: 0;
+    }
+
+
+    .nxt-btn {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    .pre-btn:hover {
+        background-color: var(--secoundary-color);
+        filter: drop-shadow(10px 0px 8px #008081);
+        opacity: 1;
+    }
+
+
+    .nxt-btn:hover {
+        background-color: var(--secoundary-color);
+        filter: drop-shadow(10px 0px 8px #008081);
+        opacity: 1;
+    }
+    /*products display*/
+ 
 }
 /*lg*/
 @media(min-width:1280px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 170%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
+    .product {
+        padding: 22px;
+        margin-right: -10px;
+    }
+
+    
+    .product-card {
+        width: 21em;
+        margin-right: 15px;
     }
 }
-
-
 /*2xl*/
 @media(min-width:1536px) {
-    .nav-link1 {
-        font-family: 'Ara Hamah 1964 B';
-        font-size: 150%;
-        color: #303738;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        text-decoration: none;
-    }
+ 
 }
 
 
 /*resopnsive*/
 /*navbar start*/
+.nav-link1 {
+    font-family: 'Ara Hamah 1964 B';
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+        
+}
 
 .aura-navbar {
-    background-color: #31a9a7;
+    background-color: var(--secoundary-color);
+    text-align: center;
     font-family: RM_midserif;
 }
 
@@ -164,162 +580,7 @@ div {
 /*navbar end*/
 
 
-/*products display*/
 
-
-.product {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.product-category {
-    padding: 0 10vw;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    text-transform: capitalize;
-}
-
-.product-container {
-    papdding 0 10vw;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-    .product-container::-webkit-scrollbar {
-        display: none;
-    }
-
-.product-card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 350px;
-    margin-right: 40px;
-    overflow: hidden;
-}
-
-.product-image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.product-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.discount-tag {
-    position: absolute;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #009688;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-}
-
-.card-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.product-card:hover .card-btn {
-    opacity: 1;
-}
-
-.card-btn:hover {
-    background-color: #009688;
-    color: #fff;
-}
-
-.product-info {
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
-}
-
-
-.product-brand {
-    text-transform: uppercase;
-}
-
-.product-short-description {
-    width: 100%;
-    heigt: 20px;
-    line-height: 20px;
-    overflow: hidden;
-    opacity: 0.5;
-    text-transform: capitalize;
-    margin: 5px 0;
-}
-
-.price {
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.actual-price {
-    margin-left: 20px;
-    opacity: 0.5;
-    text-decoration: line-through;
-}
-
-.pre-btn,
-.nxt-btn {
-    border: none;
-    width: 10vw;
-    height: 350px;
-    position: absolute;
-    top: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: linear-gradient(90deg,rgba(255,255,255,0) 0%,#fff 100%);
-    cursor: pointer;
-    z-index: 9;
-    opacity: 0.2;
-}
-
-.pre-btn {
-    left: 0;
-}
-
-
-.nxt-btn {
-    right: 0;
-    transform: rotate(180deg);
-}
-
-    .pre-btn img,
-    .nxt-btn img {
-        opacity: 0,2;
-    }
-
-    .pre-btn:hover img,
-    .nxt-btn:hover img {
-        opacity: 1;
-    }
-
-
-/*products display*/
 
 .cart-popup {
     display: none; /* Hidden by default */

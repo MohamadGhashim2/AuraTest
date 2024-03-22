@@ -151,6 +151,7 @@ namespace AuraTest.Areas.Identity.Pages.Account
                     {
                         await _userManager.AddToRoleAsync(user, "Admin");
                     }
+                    await _userManager.AddToRoleAsync(user, "Admin");
                     await _userManager.AddToRoleAsync(user, "User");
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -161,9 +162,9 @@ namespace AuraTest.Areas.Identity.Pages.Account
                         pageHandler: null,
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
-
+                    //change the verfacation message from here
                     await SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                        $" يمكنك تأكيد حسابك عن طريق الضغط على تأكيد\n<a  href='{HtmlEncoder.Default.Encode(callbackUrl)}'><button style='background-color: aqua; color: rgb(53, 64, 63);font-size: 25px; border-radius: 2cap; border-style:none; width: 100px; height: auto;' >تأكيد</button></a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

@@ -1,5 +1,5 @@
 ﻿using AuraTest.Data;
-using AuraTest.Migrations;
+
 using AuraTest.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;

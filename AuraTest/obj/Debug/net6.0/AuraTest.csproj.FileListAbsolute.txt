@@ -575,3 +575,5 @@ C:\Users\mgrm3\Desktop\AuraTest\AuraTest\obj\Debug\net6.0\refint\AuraTest.dll
 C:\Users\mgrm3\Desktop\AuraTest\AuraTest\obj\Debug\net6.0\AuraTest.pdb
 C:\Users\mgrm3\Desktop\AuraTest\AuraTest\obj\Debug\net6.0\AuraTest.genruntimeconfig.cache
 C:\Users\mgrm3\Desktop\AuraTest\AuraTest\obj\Debug\net6.0\ref\AuraTest.dll
+C:\Users\mgrm3\Desktop\AuraTest\AuraTest\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\mgrm3\Desktop\AuraTest\AuraTest\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

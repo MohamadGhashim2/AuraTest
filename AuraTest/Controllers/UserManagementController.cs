@@ -1,5 +1,4 @@
-﻿using AuraTest.Migrations;
-using AuraTest.Models;
+﻿using AuraTest.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
